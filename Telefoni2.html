@@ -1,0 +1,134 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+</html>
+
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="java.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <sript src="bootstrap.min.js">
+
+        <meta charset="UTF-">
+</head>
+
+<body>
+
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="img/logo.jpg">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="Telefoni.html">Home</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <div class="information">
+            <div class="overlay"></div>
+            <table id="slikaTelefona" class="mobile">
+            </table>
+            <div id="circle">
+                <div class="feature one" id="fn">
+
+
+                </div>
+                <div class="feature two" id="sn">
+
+                </div>
+                <div class="feature three" id="tn">
+
+                </div>
+                <div class="feature four" id="cn">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <img src="img/arrow.png" id="upBtn">
+        <h3>Features</h3>
+        <img src="img/arrow.png" id="downBtn">
+
+    </div>
+    <section class="info">
+        <h2 style="color:#ffffff">
+            Specifikacije
+        </h2>
+        <table class="content-table" id="specifikacije">
+        </table>
+        <section>
+            <div class="wrapper">
+                <div class="h_iframe">
+                    <div class="container" id="iframe"></div>
+                </div>
+            </div>
+            <section>
+                    <input type="button" onclick="sortlike()" value="Sortiraj po like-ovima">
+                    <input type="button" onclick="sortdislike()" value="Sortiraj po dislike-ovima">
+                <form class="form" method = "POST">
+                    
+                    <h2>Dodajte Komentar:</h2>
+                    Name: <input type="text" id="name" required /><br /><br />
+                    Text: <textarea rows="5" cols="30" id="bodyText" required></textarea><br />
+                    Ocena:
+                    <input onclick="setOcena(1)" name="ocena" id="ocena" type="radio" value="1" />
+                    <label for="1">1</label>
+                    <input onclick="setOcena(2)" name="ocena" id="ocena" type="radio" value="2" />
+                    <label for="2">2</label>
+                    <input onclick="setOcena(3)" name="ocena" id="ocena" type="radio" value="3" />
+                    <label for="3">3</label>
+                    <input onclick="setOcena(4)" name="ocena" id="ocena" type="radio" value="4" />
+                    <label for="4">4</label>
+                    <input onclick="setOcena(5)" name="ocena" id="ocena" type="radio" value="5" />
+                    <label for="5">5</label>
+                    <input type="submit" onclick="addComment()" value="Add Comment">
+                    
+                   
+                </form>
+
+                <div id="cont">
+                    <div id="comment">
+
+                    </div>
+                </div>
+
+            </section>
+            <script>
+                var circle = document.getElementById("circle");
+                var upBtn = document.getElementById("upBtn");
+                var downBtn = document.getElementById("downBtn");
+                var rotateValue = circle.style.transform;
+                var rotateSum;
+                upBtn.onclick = function () {
+                    rotateSum = rotateValue + "rotate(-90deg)";
+                    circle.style.transform = rotateSum;
+                    rotateValue = rotateSum;
+
+                }
+
+                downBtn.onclick = function () {
+                    rotateSum = rotateValue + "rotate(+90deg)";
+                    circle.style.transform = rotateSum;
+                    rotateValue = rotateSum;
+
+                }
+            </script>
+
+
+</body>
+
+</html>

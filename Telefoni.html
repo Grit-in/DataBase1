@@ -1,0 +1,84 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ocenjivanje Telefona</title>
+    <meta charset="UTF-">
+    <meta name="Website za ocenjivanje telefona" content="Gledaj ocenjivanje telefona i oceniga sam">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Page.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+   
+    <script src="java.js"></script>    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <sript src="bootstrap.min.js">
+    <meta charset="UTF-">
+    <meta name="Website za ocenjivanje telefona" content="Gledaj ocenjivanje telefona i oceniga sam">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching...</h3>
+    </div>
+    
+    <div class = "Telefon-bg">
+        
+        <div class="main">
+            <div class="logo">
+                <img src="img/logo.jpg" width="200%">
+            </div>
+                <div class="nav-links">
+                    <ul>
+                    <li><a href="Telefoni.html">Home</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+        </div>
+        <section class = "top">
+            <h1><span>Ocenjivanje Telefona</span>Website za Ocenjivanje</h1>
+            <div class="form-container">
+               <div class="form-left">
+                    <label for="Telefon"> </label>
+                    <div class="container">
+                        <div id="searchWrapper">
+                    <input type="text" name="searchbar" id="searchbar" placeholder="Unesite pojam za pretragu">
+                        </div>
+                    </div>  
+                    <p>Primer: "Huawei P30"</p> 
+                </div>
+                <input type="button" value="Search" id="cta-btn">
+            </div>
+            <ul id="ListaTelefona"></ul>
+        </section>
+    </div>
+<section>
+        <h2 style="color:#B0C4DE">
+            Dostupni Telefoni
+        </h2>
+        <div id ="telefon" class="fluid-container">
+
+               
+               
+        </div>
+   
+</section>
+    <section class = "info">
+        <div class= "right">
+            <h2>Informacije</h2>
+            <p>Ovo je website za davanje recenzija telefona mozete oceniti telefone i mozete ostaviti komentar sa vasim iskustvom</p>
+        </div>
+        <img src="img/logo.jpg" alt="Error">
+        
+    </section>
+   <script>
+       let btn = document.getElementById('cta-btn');
+      let overlay = document.getElementById('overlay')
+       btn.addEventListener('click',() =>{
+
+        overlay.style.display ='grid';
+        overlay.classList.add('animate-overlay')
+        
+        })
+       </script>
+</body>
+</html>

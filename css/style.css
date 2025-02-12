@@ -1,0 +1,267 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position:relative;
+    overflow: hidden;
+    background:url('../bp2/img/back.jpg');
+    background-size:cover;
+    background-repeat:  no-repeat;
+    background-position: 0% 100% ;
+    color:rgb(12, 12, 12);
+    text-align: center;
+    padding-bottom: 8em;
+
+}
+nav{
+    width:100%;
+    position:sticky;
+    margin:1em auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.nav-links img{
+    width:2.0em;
+    height:2.0em;
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+    width:150px;
+}
+.nav-links{
+    flex:1;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    margin:0 20px;
+}
+.nav-links ul li a{
+    color:rgb(20, 20, 20);
+    text-decoration: none;
+
+}
+.information{
+    width:1000px;
+    height:1000px;
+    position:absolute;
+    top:50%;
+    left:-10%;
+    transform: translateY(-50%); 
+    
+
+}
+.dropdown img{
+    width:2.0em;
+    height:2.0em;
+}
+#circle{
+    width:1000px;
+    height:1000px;
+    position:absolute;
+    top:0;
+    left:0;
+   border-radius: 50%;
+   transform:rotate(0deg);
+   transition:1s;
+
+}
+.feature img{
+    width:70px;
+}
+.feature{
+    position: absolute;
+    display:flex;
+    color:#fff;
+}
+.feature div{
+    margin-left: 30px;
+    
+}
+.info{
+    margin:0;
+    background-color: rgb(116, 116, 116);
+
+}
+.feature div p{
+    margin-top:8px;
+
+}
+.one{
+    top: 450px;
+    right: 50px;;
+}
+.two{
+    top: 150px;
+    left: 350px;
+    transform:rotate(-90deg);
+}
+
+.three{
+    bottom: 450px;
+    left: 50px;;
+    transform:rotate(-180deg);
+}
+.four{
+    bottom: 150px;
+    right: 350px;;
+    transform:rotate(-270deg);
+}
+.commentBox{
+    padding:1px;
+    width:70%;
+    border:1px solid #000;
+    background-color: #8f8e8e;
+    margin-bottom:10px;
+    
+}
+.leftPanelImg{
+    width:10%;
+    float:left;
+}
+.leftPanelImg img{
+    border-radius:100%;
+}
+.rightPanelImg{
+    width:85%;
+    float:left;
+    margin-left:1%;
+}
+.clear{
+    clear:both;
+}
+.form{
+    padding:10px;
+    border-bottom:1px solid #000;
+    margin-bottom:10px;
+    text-align: left;
+}
+.form input[type="text"],.form textarea{
+    border:1px solid #000;
+    padding: 2px;
+    width:300px;
+
+}
+.mobile{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.controls{
+    position:absolute;
+    right:10%;
+    top:50%;
+    transform: translateY(-50%);
+    text-align:center;
+
+}
+.content-table{
+    border-collapse:collapse;
+    margin:25px 0;
+    font-size:0.9em;
+    min-width:400px;
+    border-radius:5px 5px 0 0 ;
+    overflow: hidden;
+    box-shadow:0 0 20px rgba(0,0,0,0.15);
+
+}
+.content-table thead tr{
+    background-color:rgb(80, 80, 80);
+    color:#000000;
+    text-align: left;
+    font-weight: bold;
+
+
+}
+.wrapper {
+    width:60%;
+    max-width:800px;
+    height:80%;
+    margin:0;
+  }
+  
+  .h_iframe {
+    position:relative;
+    padding-top: 56%;
+  }
+  
+  .h_iframe iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+.Komentari{
+    display: flex;
+    justify-content:left;
+    align-items:left;
+    height: 50vh;
+    font-family:"Roboto"sans-serif;
+    margin:0;
+    background-color: rgb(163, 163, 163);
+   
+
+
+}
+.Komentari form{
+    resize:none;
+}
+.content-table th{
+    padding:12px 15px;
+    color:#ffffff;
+}
+.content-table td{
+    font-weight:bold;
+    padding:12px 15px;
+    color:rgb(0, 0, 0);
+}
+.content-table tbody tr{
+    border-bottom:1px solid #ddd;
+
+}
+.content-table tbody tr:nth-of-type(even){
+    background-color:#cccccc;
+}
+.content-table tbody tr:last-of-type{
+    border-bottom:2px solid rgb(70, 69, 69);
+}
+
+.controls h3{
+    margin: 15px 0;
+    color:#fff;
+
+}
+#upBtn{
+    width:15px;
+    cursor:pointer;
+}
+#downBtn{
+    width:15px;
+    cursor:pointer;
+    transform:rotate(180deg);
+}
+.overlay{
+    width:0;
+    height:0;
+    border-top:500px solid #fff;
+    border-right:500px solid rgb(39, 39, 39);
+    border-bottom:500px solid #fff;
+    border-left:500px solid #fff;
+    position: absolute;
+    left:0;
+    top:0;
+    
+}

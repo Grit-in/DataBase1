@@ -1,0 +1,365 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}   
+:root{
+    --lead:2em
+
+
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+
+}
+.Telefon-bg{
+    position:relative;
+    overflow: hidden;
+    background: rgb(39, 39, 39) url('../bp2/img/back.jpg');
+    background-size:cover;
+    background-repeat:  no-repeat;
+    background-position: 0% 100% ;
+    color:rgb(12, 12, 12);
+    text-align: center;
+    padding-bottom: 8em;
+
+}
+.nav-links img{
+    width:6.0em;
+    height:6.0em;
+}
+* {
+    box-sizing: border-box;
+  }
+  nav{
+    width:100%;
+    position:sticky;
+    margin:1em auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+    width:350px;
+}
+.nav-links{
+    flex:1;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    margin:0 20px;
+}
+.nav-links ul li a{
+    color:rgb(20, 20, 20);
+    text-decoration: none;
+
+}
+header{
+padding: 1em 0;
+
+}
+.Telefon-bg a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+
+}
+.Telefon-bg img{
+    width:2.0em;
+    height:2.0em;
+}
+section{
+    margin: 0 1em;
+
+
+
+}
+h1{
+    font-size:2.4em;
+    margin: 2em 0 1.3em;
+    
+}
+h1 span{
+    text-transform: uppercase;
+    display: block;
+    font-size:1.4em;
+
+}
+h1 span::before{
+    content:' ';
+    position: absolute;
+    width: 3em;
+    background:rgb(54, 54, 54);
+    height: 0.4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+
+}
+.Telefon-bg p{
+    font-weight:bold;
+    margin:0 1em 3em;
+}
+.form-container{
+    background-color: rgb(58, 57, 57);
+    margin:2em -1em 0;
+    padding:2em;
+}
+#ListaTelefona {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+  }
+.Tel{
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+      "name image"
+      "model image";
+    text-align: left;
+  }
+#searchWrapper {
+    position: relative;
+}
+#searchWrapper::after {
+    content: "";
+    position: absolute;
+    font-size:1.4em;
+    border-radius: .5em;
+    margin-top: 1.2em;
+    top: 7px;
+    right: 15px;
+  }
+.Tel > h2 {
+    grid-area: name;
+    margin-bottom: 0px;
+  }
+  
+.Tel > p {
+    grid-area: model;
+    margin: 0;
+    margin-top: -18px;
+  }
+  
+.Tel > img {
+    max-height: 100px;
+    grid-area: image;
+  }
+  
+label{
+    color:rgb(77, 77, 77);
+    font-weight: bold;
+    display: block;
+    margin-bottom:1em;
+    font-size:1.2em;
+
+}
+input[type=text]{
+    border:1px solid rgb(0, 0, 0);
+    width: 70%;
+    padding:1px;
+    box-sizing:border-box;
+    font-size:1.4em;
+    border-radius: .5em;
+    margin-top: 1.2em;
+
+}
+.form-container p {
+    color:rgb(255, 255, 255);
+    margin-bottom: 1.5em;
+    font-weight: normal;
+    font-size:.9em;
+    margin-top: .3em;
+
+
+}
+input[type=button]{
+    background-color:rgb(138, 138, 135);
+    border:none;
+    width:20%;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    padding:1em 0;
+    border-radius: .5em;
+    font-size:0.8em;
+    cursor: pointer;
+
+}
+input[type=button]:hover{
+    background-color:rgb(117, 117, 117);
+
+    
+}
+.info{
+    margin:0;
+    background-color: rgb(77, 77, 77);
+
+}
+.right{
+    text-align: center;
+    margin:3em 1em;
+}
+h2{
+    text-transform: uppercase;
+    position:relative;
+
+}
+h2::before{
+    content:' ';
+    position: absolute;
+    width: 3em;
+    background:rgb(65, 65, 65);
+    height: 0.4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+
+}
+img{
+    width: 50%;
+    size:cover;
+  
+}
+p{
+    line-height: var(--lead);
+
+}
+.overlay{
+    position:absolute;
+    height:100vh;
+    width:100%;
+    background:rgba(0,0,0,.9);
+    z-index: 1;
+    place-content:center;
+    color:rgb(255, 255, 255);
+    display:none;
+    opacity:0;
+   
+}
+.animate-overlay{
+    animation: overlay 3s forwards;
+
+}
+
+@media(min-width:730px){
+    section{
+    margin:0 4em;
+    }
+    .form-container{
+        margin: 2em -4em 0;
+    }
+
+
+}
+
+
+@media(min-width:930px){
+    .Telefon-bg{
+        text-align: left;
+
+    }
+    .Telefon-bg p{
+        margin:0 0 3em;
+    }
+    .Telefon-bg section{
+            width:65%;
+
+    }
+    .form-container{
+        margin:2em 0 0;
+        padding:2em;
+        border-radius:.5em;
+        box-shadow: 10px 10px 10px rgb(233, 233, 233,.3);
+    }
+    form{
+        display: flex;
+    }
+    .form-left{
+        width:70%;
+    }
+    label{
+        margin:0;
+    }
+
+    input[type="button"]{
+        height: fit-content;
+        font-size:1.1em;
+        margin-left:1em;
+        margin-top:2.2em;
+        padding: .7em 0;
+        width:30%;
+    }
+    .Telefon-bg p {
+        margin-bottom:0;
+    }
+    section.info{
+        display:grid;
+        grid-template-columns:repeat(2,50%);
+        grid-template-areas:"slika content";
+
+    }
+    .right{
+        grid-area:content;
+        padding:0 10%;
+        text-align:left;
+        align-self:center;
+    }
+    img{
+        grid-area:slika;
+    }
+    h2{
+        margin-bottom:0;
+
+    }
+
+}
+
+.top{
+    animation: fadeIn 2s forwards;
+
+}
+@keyframes fadeIn {
+    from{
+    opacity:0;
+    transform:translateY(-2em);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+
+    }
+    
+}
+@keyframes overlay {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+    
+    
+}

@@ -1,0 +1,127 @@
+[{
+  "_id": {
+    "$oid": "6050ce5c5ee6fa2550513639"
+  },
+  "id": "Honor10",
+  "brend": "Honor",
+  "model": "Honor 10",
+  "phoneImage": "https://img.gigatron.rs/img/products/large/image5def674305d9d.png",
+  "cena": "39.999din",
+  "datum_izlaska": "30 Jun 2019",
+  "Snaga_brzog_punjaca": "60w",
+  "ekran": 6,
+  "rezolucija": "2280x1080",
+  "Operativni_sistem": "Android 9.0",
+  "procesor": "Kirin 710",
+  "boje": [
+    "black",
+    "white",
+    "blue",
+    "red"
+  ],
+  "osvezavanje": "60hz",
+  "WiFi": "da",
+  "Bluetooth": "da",
+  "broj_jezgara_procesora": 4,
+  "rom": [
+    64
+  ],
+  "ram": 4,
+  "Zadnja_kamera": 24,
+  "Prednja_kamera": "24.0 Mpix + 16.0 Mpix",
+  "baterija": "3400mAh",
+  "iframe": "https://www.youtube.com/embed/nYNnIP9QG-Y",
+  "Komentar": [
+    {
+      "id": 100,
+      "Name": "aisdjasid",
+      "tekst": "gdfgsdgdgdfgs",
+      "likes": "25",
+      "dislikes": "12"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6050ce5c5ee6fa255051363a"
+  },
+  "id": "Huawei_P30",
+  "brend": "Huawei",
+  "model": "Huawei P30 Pro",
+  "phoneImage": "https://img.gigatron.rs/img/products/large/image5c9a2b0e1fe14.png",
+  "cena": "85.999din",
+  "datum_izlaska": "13 Avgust 2019",
+  "Snaga_brzog_punjaca": "60w",
+  "ekran": 6.4,
+  "rezolucija": "2340x1080",
+  "Operativni_sistem": "Android 9.0",
+  "procesor": "Exynos 9453",
+  "boje": [
+    "black",
+    "white"
+  ],
+  "osvezavanje": "60hz",
+  "WiFi": "da",
+  "Bluetooth": "da",
+  "broj_jezgara_procesora": 6,
+  "rom": [
+    64,
+    128
+  ],
+  "ram": 6,
+  "Zadnja_kamera": 40,
+  "Prednja_kamera": "40Mpix+20Mpix+8Mpix+ToF",
+  "baterija": "4200mAh",
+  "iframe": "https://www.youtube.com/embed/nYNnIP9QG-Y",
+  "Komentar": [
+    {
+      "id": 100,
+      "Name": "aisdjasid",
+      "tekst": "gdfgsdgdgdfgs",
+      "likes": "25",
+      "dislikes": "12"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6050ce5c5ee6fa255051363b"
+  },
+  "id": "Moterola_E6",
+  "brend": "Moterola",
+  "model": "Moterola E6",
+  "phoneImage": "https://img.gigatron.rs/img/products/large/image5d78fe2bbf6f6.png",
+  "cena": "14.999",
+  "datum_izlaska": "25 Februar 2019",
+  "Snaga_brzog_punjaca": "60w",
+  "ekran": 6.2,
+  "rezolucija": "2340x1080",
+  "Operativni_sistem": "Android 9.0",
+  "procesor": "Exynos 9610",
+  "boje": [
+    "black",
+    "white",
+    "blue",
+    "coral"
+  ],
+  "osvezavanje": "60hz",
+  "WiFi": "da",
+  "Bluetooth": "da",
+  "broj_jezgara_procesora": 6,
+  "rom": [
+    64,
+    128
+  ],
+  "ram": 4,
+  "Zadnja_kamera": 25,
+  "Prednja_kamera": "25(glavna) + 12 + 5",
+  "baterija": "3500mAh",
+  "iframe": "https://www.youtube.com/embed/usV_Gjg-pc4",
+  "Komentar": [
+    {
+      "id": 100,
+      "Name": "aisdjasid",
+      "tekst": "gdfgsdgdgdfgs",
+      "likes": "25",
+      "dislikes": "12"
+    }
+  ]
+}]
